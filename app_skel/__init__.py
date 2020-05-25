@@ -1,7 +1,7 @@
 """
 app_skel - Phylogeographic Temporal Analysis
 """
-__version__ = "0.0.11"
+__version__ = "0.0.2"
 __author__ = "Isaac Overcast"
 
 ## Possible values for __loglevel__: "DEBUG"  "INFO"  "WARN"  "ERROR"
