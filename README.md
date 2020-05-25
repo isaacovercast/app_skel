@@ -1,7 +1,7 @@
 # app_skel
 A bare bones simulation application skeleton which comes with ipyrad
 style-params file creation and parsing, a base conda package meta.yaml,
-serial simulations or integration with an ipyparallel backend off the
+serial simulations and integration with an ipyparallel backend off the
 shelf, base rtfd documentation skel, and some other useful stuff like
 `app_skel.save()` and `app_skel.load()`, which might need _some_
 customization depending on how complicated your model is.
