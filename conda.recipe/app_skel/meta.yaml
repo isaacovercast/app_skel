@@ -1,0 +1,42 @@
+package:
+  name: app_skel
+  version: "0.0.11"
+
+source:
+  git_url: https://github.com/isaacovercast/app_skel
+  git_tag: master
+
+build:
+  number: 11
+  noarch: python
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - msprime
+    - cython
+    - numpy
+    - pandas
+  run:
+    - python >=3
+    - setuptools
+    - ipyparallel
+    - cython
+    - scipy
+    - nbconvert
+    - joblib
+    - jupyter
+    - pandas
+    - matplotlib
+    - momi
+    - msprime
+    - cloudpickle
+
+  commands:
+    - app_skel -v
+
+about:
+  home: https://github.com/isaacovercast/app_skel
+  license: GPLv3
+  summary: app_skel

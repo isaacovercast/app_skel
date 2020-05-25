@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+app_skel.egg-info/
+app_skel/__pycache__/
+app_skel/default_app_skel/
+*app_skel_log.txt
+*params-*
+*.pyc
