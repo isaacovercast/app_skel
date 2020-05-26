@@ -12,6 +12,22 @@ class that does the work is called Core (change if you like).
 Any very particular changes that need to be addressed in the code are labeled
 with a `FIXME` tag and hopefully sufficient explanation.
 
+## Usage
+__Pro Tip:__ Run the `egrep` _before_ you do the `git init`.
+
+* Clone this repo
+* Replace app_skel with your chosen new package name:
+
+    egrep -lRZ 'app_skel' . | xargs -0 -l sed -i -e 's/app_skel/foo/g'
+
+* If you choose, you can rename the `Core` class to something more meaningful
+
+    egrep -lRZ 'Core' . | xargs -0 -l sed -i -e 's/Core/Bar/g'
+
+* You are probably 95% there, but there will probably be some things to clean
+up. Better than doing it all from scratch.
+
+
 ## Where the work is done
 Inside app_skel.__main__ around line 159 is a call to `data.simulate()`. This
 will call the workhorse function of the primary class, and so app_skel.Core
@@ -40,15 +56,3 @@ Long form arguments:
 * `--ipcluster <cluster_id>`    Pass in a cluster ID for a running up ipcluster
     parser.add_argument("--ipcluster", metavar="ipcluster", dest="ipcluster",
 
-## Usage
-* Clone this repo
-* Replace app_skel with your chosen new package name:
-
-    egrep -lRZ 'app_skel' . | xargs -0 -l sed -i -e 's/app_skel/foo/g'
-
-* If you choose, you can rename the `Core` class to something more meaningful
-
-    egrep -lRZ 'Core' . | xargs -0 -l sed -i -e 's/Core/Bar/g'
-
-* You are probably 95% there, but there will probably be some things to clean
-up. Better than doing it all from scratch.
