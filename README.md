@@ -41,7 +41,14 @@ Long form arguments:
     parser.add_argument("--ipcluster", metavar="ipcluster", dest="ipcluster",
 
 ## Usage
-* Clone this repo
+* Clone this repo and give it the name of your new project:
+
+    git clone https://github.com/isaacovercast/app_skel.git FOO
+
+* Rename the repo to something more meaningful
+
+    git remote set-url origin FOO
+
 * Replace app_skel with your chosen new package name:
 
     egrep -lRZ 'app_skel' . | xargs -0 -l sed -i -e 's/app_skel/foo/g'
