@@ -14,23 +14,15 @@ requirements:
   build:
     - python
     - setuptools
-    - msprime
-    - cython
     - numpy
     - pandas
   run:
     - python >=3
     - setuptools
     - ipyparallel
-    - cython
     - scipy
-    - nbconvert
-    - joblib
-    - jupyter
     - pandas
     - matplotlib
-    - momi
-    - msprime
     - cloudpickle
 
   commands:
