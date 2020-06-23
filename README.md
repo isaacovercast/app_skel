@@ -75,3 +75,7 @@ Long form arguments:
 
 * You are probably 95% there, but there will probably be some things to clean
 up. Better than doing it all from scratch.
+
+## Attribution
+The vast majority of this code was poached from  [ipyrad](https://github.com/dereneaton/ipyrad/),
+an application developed by me and Deren Eaton.
