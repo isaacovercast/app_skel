@@ -314,7 +314,6 @@ class Core(object):
 
 
     def parallel_simulate(self, ipyclient, nsims=1, quiet=False, verbose=False):
-        npops = self.paramsdict["npops"]
         parallel_jobs = {}
         _ipcluster = {}
         ## store ipyclient engine pids to the Core so we can
@@ -370,8 +369,7 @@ class Core(object):
     
     def serial_simulate(self, nsims=1, quiet=False, verbose=False):
         import pandas as pd
-        npops = self.paramsdict["npops"]
-    
+
         msfs_list = []
 
         printstr = " Performing Simulations    | {} |"
